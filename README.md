@@ -6,7 +6,8 @@ Tools for the usage of the Blue Team.
 **Requirements:** Need to have RSAT ("Remote Server Admin Tools") installed on the machine this script will execute from. <br>
 **Version:** 1.0 <br>
 
-Red Teamers can leverage overly permissive permissions on GPOs to change them (given the appropriate credentials), such as adding their own script to the GPO - 
+This tool was created as a response (or perhaps- a pre-curser) to FSecureLABS's tool: [SharpGPOAbuse](https://github.com/FSecureLABS/SharpGPOAbuse).<br>
+Red Teamers can leverage overly permissive permissions on GPOs to change them, such as adding their own script to the GPO - 
 which in turn may run on various hosts in the target organization.
 This technique may help them achieve remote code execution, privilege escalation, persistance, etc.
 
