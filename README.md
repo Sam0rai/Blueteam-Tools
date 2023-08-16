@@ -8,7 +8,7 @@ Tools for the usage of the Blue Team.
 
 This tool was created as a response (or perhaps- a pre-curser) to FSecureLABS's tool: [SharpGPOAbuse](https://github.com/FSecureLABS/SharpGPOAbuse).<br>
 Red Teamers can leverage overly permissive permissions on GPOs to change them, such as adding their own script to the GPO - 
-which in turn may run on various hosts in the target organization.
+which in turn may run on various hosts in the target organization that GPO is applied on.
 This technique may help them achieve remote code execution, privilege escalation, persistance, etc.
 
 **Find-GPO-Non-Default-Trustees.ps1** can be used by both the Red Team, as well as the Blue Team (even by a low-privileged user), to iterate over all GPOs in the Domain Controller, 
