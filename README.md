@@ -19,7 +19,7 @@ The list displays the GPO name, the user or AD group and their corresponding per
 This was done in order to know if default trustees do in fact have permissions to change the GPO, or whether they were removed.
 <br><br>
 
-* **Find-Service-Insecure-ACL-Permissions.ps1**
+* **Find-Service-Insecure-ACL-Permissions.ps1** <br>
 **Purpose:** Identifying privilege escalation attack surface via service executable hijacking; i.e.: services which point to an executable on disk which has weak ACL permissions on it, allowing attackers to replace it with their malicious service executable. <br>
 **Requirements:** None (though there's commented code in it for importing the "ActiveDirectory" module, if it exists on the host from which the script is run). <br>
 **Version:** 1.0 <br>
