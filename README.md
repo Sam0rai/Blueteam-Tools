@@ -2,7 +2,7 @@
 Tools for the usage of the Blue Team.
 
 * **Find-GPO-Non-Default-Trustees.ps1** <br>
-  **Purpose:** Identifying GPOs (Group Policy Objects) which non-default users \ AD groups (a.k.a: "Trustees") can modify or delete. <br>
+**Purpose:** Identifying GPOs (Group Policy Objects) which non-default users \ AD groups (a.k.a: "Trustees") can modify or delete. <br>
 **Requirements:** Need to have RSAT ("Remote Server Admin Tools") installed on the machine this script will execute from. <br>
 **Version:** 1.0 <br>
 
@@ -17,3 +17,9 @@ The list displays the GPO name, the user or AD group and their corresponding per
 
 **Note:** If such a GPO is found - the list will contain ALL the users and AD groups with permissions to change it (including the default one mentioned above).
 This was done in order to know if default trustees do in fact have permissions to change the GPO, or whether they were removed.
+<br><br>
+
+* **Find-Service-Insecure-ACL-Permissions.ps1**
+**Purpose:** Identifying privilege escalation attack surface via service executable hijacking; i.e.: services which point to an executable on disk which has weak ACL permissions on it, allowing attackers to replace it with their malicious service executable. <br>
+**Requirements:** None (though there's commented code in it for importing the "ActiveDirectory" module, if it exists on the host from which the script is run). <br>
+**Version:** 1.0 <br>
